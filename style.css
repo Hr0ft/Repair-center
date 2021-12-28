@@ -82,7 +82,7 @@ body {
 }
 
 .header__nav_divider {
-    background-image: url('./IMG/divider.png)');
+    background-image: url(./IMG/divider.png);
     width: 2px;
     height: 32px;
 }
