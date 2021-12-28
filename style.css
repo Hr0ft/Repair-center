@@ -82,7 +82,7 @@ body {
 }
 
 .header__nav_divider {
-    background-image: url(./IMG/divider.png);
+    background-image: url('./IMG/divider.png)');
     width: 2px;
     height: 32px;
 }
@@ -207,7 +207,7 @@ body {
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url(/IMG/repair.png);
+    background-image: url(./IMG/repair.png);
     background-repeat: no-repeat;
     background-position: right;
     padding-left: 6px;
@@ -217,7 +217,7 @@ body {
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url(/IMG/checkstatus.png);
+    background-image: url(./IMG/checkstatus.png);
     background-repeat: no-repeat;
     background-position: right;
     padding-left: 6px;
@@ -323,7 +323,7 @@ body {
     margin-top: 0px;
     width: 24px;
     height: 24px;
-    background-image: url(/IMG/expand.png);    
+    background-image: url(./IMG/expand.png);    
 } 
 
 /*<<<<<<<<< FOOTER img  */
