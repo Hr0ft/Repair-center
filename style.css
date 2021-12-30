@@ -6,10 +6,6 @@
     font-family: "TTLakesBold";
     src:url("./Fonts/TTLakes/TTLakes-Bold.ttf");
 }
-@font-face {
-    font-family: "TT Lakes";
-    src:url("./Fonts/TTLakes/TTLakes-Black.ttf");
-}
 
 html {
     box-sizing: border-box;
@@ -31,7 +27,6 @@ body {
 }
 
  /* <<<<<<<<<<<<<<<<<<<<<< HEADER BLOC >>>>>>>>>>>>>>*/
-
 
 .header {
     display: flex;
@@ -110,9 +105,6 @@ body {
 
 }
 
-
-
-
   /* <<<<<<<<<<<< MAIN BLOCK  >>>>>>>>>>>>>>>>>>>>*/
 
   .main {
@@ -120,8 +112,6 @@ body {
     height: 509px;
     background-color: #F8F8F8;    
 }      
-
-
 
     /* <<<<<<<< main title >>>>>>>>>>>  */
 
@@ -170,7 +160,7 @@ body {
    margin-right: 14px;
 }
 
-.main__button_fonts {
+.main__button_fonts {  
     font-size: 16px;
     line-height: 40px;
     letter-spacing: -0.20000000298023224px;
@@ -180,6 +170,7 @@ body {
 }
 
 /* <<<<<<< SLIDE MENU >>>>>>>>>>>>> */
+
 .nav-scroller {
     max-width: 767px;
     overflow-x: hidden;
@@ -262,6 +253,8 @@ body {
 }
 
 .readmore__button_fonts {
+    /* font-family: TTLakesMedium; */
+    /* font-weight: 600; */
     width: auto;
     height: 24px;
     font-size: 16px;
@@ -422,9 +415,10 @@ body {
 
     .main__img {
     background-image: url(./IMG/mainBg.jpg);
+    border-radius: 6px ;
     background-repeat: no-repeat;
     width: 531px;
-    height: 383px;
+    height: 307px;
     }
 
     .header, .mian__menu-button_hidden--dt {
