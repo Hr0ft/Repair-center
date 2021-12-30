@@ -373,14 +373,14 @@ body {
     }
 }
 
-/* 1140  >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* <<1140  >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 @media screen and (min-width:1120px) {
    
 
     .main {
         width: auto;
-        height: 535px;
+        height: 534px;
     }
 
     .main__title-hidden {
