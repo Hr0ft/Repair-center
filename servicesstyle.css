@@ -12,7 +12,7 @@
 /* service header */
 
 .ahead {
-    max-width: 768px;
+    max-width: auto;
     height: 80px;   
     padding-top: 16px;
     padding-left: 16px;
@@ -113,12 +113,16 @@
     background-color: #B5B6BC;
 }
 
+/* open button */
+
 .open {
     margin-top: 14px;
     display: flex;
-    justify-content: center; 
+    justify-content: flex-start; 
     width: 134px;
     height: 24px;
+    margin-bottom: 24px;
+    padding-left: 8px;
 }
 
 .open__button {        
@@ -133,6 +137,13 @@
     outline: none;
     line-height: 24px;
 }
+
+.open__button_reverse {  
+    margin-top: -7px;
+    transform: rotate(180deg);
+}
+
+
 
 .open__text{
     font-family: TTlakes_regular;
@@ -152,9 +163,9 @@
 }
 
 
-/* .brand__slider .swiper-slide{
-    width: auto;
-} */
+
+
+/* media */
 
 @media screen and (max-width: 767px){    
 
@@ -163,11 +174,10 @@
     }
 }
 
-
-@media screen and (min-width:768px) and (max-width:1119px) {
+@media screen and (min-width:768px) {
     
     .ahead {
-        max-width: 1119px;
+        max-width: auto;
         height: 56px;   
         padding-left: 24px; 
         padding-right: 0;
@@ -175,46 +185,73 @@
     }
 
     .wrapper {
-        max-width: 1119px;
+        max-width: auto;
         background-color: #F2F2F2;
-        padding: 24px;
         padding-right: 0px;
+        padding-top: 0;
+        padding-bottom: 24px;
     }
 
     .swiper-container {
         display: none;
     }
 
-    .brand__grid{
+    .brand__grid {
         max-width: auto;
-        height: 233px;
+        height: 200px;
         display: flex;
         justify-content:flex-start;
-        align-content: center;
+        align-content: flex-start;
         flex-wrap: wrap;
+        overflow: hidden;
+        padding-top: 24px;
+        padding-left: 24px;
+        /* padding-right: auto; */
+       
     }
 
     .brand__grid_item {
         background-color: #FFFFFF;
-        max-width: 224px;
+        width: 224px;
         min-width: 224px;
         height: 72px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items:center;
         
         padding-right: 16px;
         padding-left: 24px;
-        margin-bottom: 24px;
-        margin-right:auto;
+        margin-bottom: 16px;
+        margin-right:24px;
+        /* flex-shrink: 0; */
     }
 
     /* raednext button */
-
+    .open {
+        margin-left: 16px;
+    }
 }
 
 @media screen and (min-width:1120px) {
     .brand__slider {
         display: none;
         }
+
+    .wrapper {
+        padding: 0px;
+        padding-bottom: 24px;
     }
+
+    .brand__grid {
+        padding-left: 32px;
+        padding-top: 32px;
+    }
+ 
+    .brand__grid_item {
+        width: 240px;
+        margin-right: 32px;     
+        }
+        .open {
+            margin-left: 24px;
+    }
+}
